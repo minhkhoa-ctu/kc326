@@ -1,0 +1,729 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <title>BÀI TẬP CUỐI KÌ KC326-NHÓM 1</title>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+
+
+
+    <style>
+        @import url('https://fonts.cdnfonts.com/css/happy-new-year');
+
+        @import url('https://fonts.googleapis.com/css?family=Montserrat:700|Pacifico');
+
+        body {
+            background: url('img/winter-bg.jpg');
+
+            background-size: cover;
+            background-repeat: no-repeat;
+
+            margin: 0;
+        }
+
+        .mid {
+            text-align: center;
+            width: 100vw;
+            height: 100vh
+        }
+
+        .bottom {
+            margin: 10% 150px 0;
+        }
+
+
+        a {
+            color: #CC6600;
+            text-decoration: none;
+        }
+
+        a:hover {
+            text-decoration: none;
+            color: #333333;
+        }
+
+        img.shake-image {
+            position: absolute;
+            width: 9%;
+            top: 60%;
+            left: 30%;
+            animation: shake 0.5s;
+            animation-iteration-count: infinite;
+        }
+
+        @keyframes shake {
+            0% {
+                transform: translate(1px, 1px) rotate(0deg);
+            }
+
+            25% {
+                transform: translate(-3px, 0px) rotate(1deg);
+            }
+
+            50% {
+                transform: translate(1px, -1px) rotate(1deg);
+            }
+
+            75% {
+                transform: translate(-3px, 1px) rotate(0deg);
+            }
+
+            100% {
+                transform: translate(1px, -2px) rotate(-1deg);
+            }
+        }
+
+        @font-face {
+            font-family: 'Mountains of Christmas';
+            font-style: normal;
+            src: local("Mountains of Christmas"), local("MountainsofChristmas-Regular"), url(https://fonts.gstatic.com/s/mountainsofchristmas/v8/dVGBFPwd6G44IWDbQtPewylJhLDHyIrT3I5b5eGTHmw.woff2) format("woff2");
+        }
+
+        .caymai {
+            animation: caymai 1s linear;
+        }
+
+        @keyframes caymai {
+            0% {
+                transform: translateY(200%);
+            }
+
+            100% {
+                transform: translateY(0%);
+            }
+        }
+
+        .canhmaiphai {
+            animation: canhmaiphai 1s linear;
+        }
+
+        @keyframes canhmaiphai {
+            0% {
+                transform: translateX(100%);
+            }
+
+            100% {
+                transform: translateX(0%);
+            }
+        }
+
+        .canhmaitrai {
+            animation: canhmaitrai 1s linear;
+        }
+
+        @keyframes canhmaitrai {
+            0% {
+                transform: translateX(-100%);
+            }
+
+            100% {
+                transform: translateX(0%);
+            }
+        }
+
+        .denlongphai {
+            animation: denlongphai 1s linear;
+        }
+
+        @keyframes denlongphai {
+            0% {
+                transform: translateY(-100%);
+            }
+
+            100% {
+                transform: translateX(0%);
+            }
+        }
+
+        .denlongtrai {
+            animation: denlongtrai 1s linear;
+        }
+
+        @keyframes denlongtrai {
+            0% {
+                transform: translateY(-100%);
+            }
+
+            100% {
+                transform: translateX(0%);
+            }
+        }
+
+        .thantai {
+            animation: thantai 1s linear;
+        }
+
+        @keyframes thantai {
+            0% {
+                opacity: 0;
+            }
+
+            100% {
+                opacity: 1;
+            }
+        }
+
+        .vang {
+            animation: vang 1s linear;
+        }
+
+        @keyframes vang {
+            0% {
+                opacity: 0;
+            }
+
+            100% {
+                opacity: 1;
+            }
+        }
+
+        @-webkit-keyframes snowflakes-fall {
+            0% {
+                top: -10%
+            }
+
+            100% {
+                top: 100%
+            }
+        }
+
+        @-webkit-keyframes snowflakes-shake {
+            0% {
+                -webkit-transform: translateX(0px);
+                transform: translateX(0px)
+            }
+
+            50% {
+                -webkit-transform: translateX(80px);
+                transform: translateX(80px)
+            }
+
+            100% {
+                -webkit-transform: translateX(0px);
+                transform: translateX(0px)
+            }
+        }
+
+        @keyframes snowflakes-fall {
+            0% {
+                top: -10%
+            }
+
+            100% {
+                top: 100%
+            }
+        }
+
+        @keyframes snowflakes-shake {
+            0% {
+                transform: translateX(0px)
+            }
+
+            50% {
+                transform: translateX(80px)
+            }
+
+            100% {
+                transform: translateX(0px)
+            }
+        }
+
+
+
+
+
+        .feliz {
+
+            position: absolute;
+            bottom: 5%;
+
+            left: 50%;
+            transform: translateX(-50%);
+
+
+            font-family: 'Pacifico', cursive;
+            font-size: 45px;
+            font-weight: 700;
+            color: #CC232A;
+
+            opacity: 0;
+            animation: vem_feliz 2s forwards;
+
+        }
+
+        @media only screen and (min-height: 1000px) {}
+
+        .fogos {
+            z-index: -1;
+            width: 100%;
+            height: 100%;
+            display: block;
+            position: absolute;
+            top: 0;
+            left: 0;
+            /*         margin-top: 100px; */
+            overflow: hidden;
+        }
+
+        .fogos>div {
+            border: 2px solid #fff;
+            position: absolute;
+            opacity: 0;
+            animation: solta_fogos 2s forwards;
+        }
+
+        .fogos>div.f1 {
+            left: 20%;
+            top: 40%;
+        }
+
+        .fogos>div.f2 {
+            left: 15%;
+            top: 70%;
+        }
+
+        .fogos>div.f3 {
+            right: 20%;
+            top: 40%;
+        }
+
+        .fogos>div.f4 {
+            right: 15%;
+            top: 70%;
+        }
+
+        .fogos>div span {
+            width: 6px;
+            height: 6px;
+            display: block;
+            position: absolute;
+            top: 0;
+            left: 0;
+            opacity: 0;
+            animation: estoura_fogos 3s forwards;
+        }
+
+        .fogos>div span:nth-child(1) {
+            transform: rotate(0deg);
+        }
+
+        .fogos>div span:nth-child(2) {
+            transform: rotate(120deg);
+        }
+
+        .fogos>div span:nth-child(3) {
+            transform: rotate(240deg);
+        }
+
+        .fogos>div span:before {
+            content: '';
+            width: 2px;
+            height: 50px;
+            display: block;
+            background: #f5cc06;
+            position: absolute;
+            top: -60px;
+            left: 2px;
+        }
+
+        .fogos>div span:after {
+            content: '';
+            width: 2px;
+            height: 50px;
+            display: block;
+            background: #f5cc06;
+            position: absolute;
+            bottom: -60px;
+            left: 2px;
+        }
+
+        .fogos>div span i:before {
+            content: '';
+            width: 3px;
+            height: 3px;
+            display: block;
+            border-radius: 50%;
+            background: #fff;
+            position: absolute;
+            top: -15px;
+            left: 10px;
+        }
+
+        .fogos>div span i:after {
+            content: '';
+            width: 3px;
+            height: 3px;
+            display: block;
+            border-radius: 50%;
+            background: #fff;
+            position: absolute;
+            top: -15px;
+            right: 10px;
+        }
+
+        a.author {
+            font-size: 12px;
+            text-decoration: none;
+            color: #f47c7c;
+            position: fixed;
+            bottom: 10px;
+            right: 10px;
+        }
+
+        @keyframes vem_2017 {
+            0% {
+                right: 0%;
+            }
+
+            66.6666% {
+                right: 50%;
+                margin-right: -300px;
+            }
+
+            90% {
+                right: 50%;
+                margin-right: -300px;
+            }
+
+            100% {
+                right: 50%;
+            }
+        }
+
+        @keyframes vem_e_vai_balao {
+            0% {
+                right: 0%;
+            }
+
+            40% {
+                right: 50%;
+                margin-right: -300px;
+            }
+
+            50% {
+                right: 50%;
+                margin-right: -200px;
+                top: 50%;
+            }
+
+            100% {
+                top: -100%;
+                right: 50%;
+            }
+        }
+
+        @keyframes entrega_balao {
+            0% {
+                transform: rotate(-30deg);
+                width: 40px;
+            }
+
+            100% {
+                transform: rotate(-150deg);
+                width: 70px;
+            }
+        }
+
+        @keyframes vai_2016 {
+            0% {
+                top: 50%;
+            }
+
+            100% {
+                top: -100%;
+            }
+        }
+
+        @keyframes vem_feliz {
+            0% {
+                margin-top: 0px;
+                opacity: 0;
+            }
+
+            100% {
+                margin-top: -200px;
+                ;
+                opacity: 1;
+            }
+        }
+
+        @keyframes solta_fogos {
+            0% {
+                margin-top: 100%;
+                opacity: 0;
+                width: 2px;
+                height: 30px;
+                display: block;
+                border-radius: 50%;
+            }
+
+            75% {
+                margin-top: 0%;
+                opacity: 1;
+                width: 2px;
+                height: 30px;
+                display: block;
+                border-radius: 50%;
+            }
+
+            80% {
+                margin-top: 0px;
+                margin-left: 0px;
+                opacity: 1;
+                width: 10px;
+                height: 10px;
+                display: block;
+                border-radius: 50%;
+                transform: scale(0.2);
+            }
+
+            100% {
+                opacity: 1;
+                width: 10px;
+                height: 10px;
+                display: block;
+                border-radius: 50%;
+                transform: scale(1);
+            }
+        }
+
+        @keyframes estoura_fogos {
+            0% {
+                opacity: 0;
+            }
+
+            100% {
+                opacity: 1;
+            }
+        }
+
+
+        .christmas {
+            height: 100%;
+            width: 100%;
+            flex: 100%;
+
+            overflow: hidden;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            transition: all 1s ease-in-out;
+        }
+
+        .christmas__tree {
+            position: absolute;
+            bottom: 0;
+            right: 0;
+            width: 100%;
+            height: 300px;
+            background: url('/img/tree.png');
+            background-size: cover;
+            background-repeat: no-repeat;
+        }
+
+        .christmars__reindeer {
+            position: absolute;
+            animation: flash 8s ease-in-out;
+            left: -100%;
+        }
+
+        @keyframes flash {
+            from {
+                top: 35%;
+                left: -70%;
+                transform: scale(0.5);
+            }
+
+            to {
+                top: -50%;
+                left: 200%;
+                transform: scale(2);
+            }
+        }
+
+        .christmars__title h1 {
+            color: #fff;
+            margin: auto;
+            font-size: 100px;
+            font-weight: bolder;
+            cursor: default;
+        }
+
+        .christmars__gift {
+            position: absolute;
+            cursor: pointer;
+            top: 5%;
+        }
+
+        .christmars__gift img {
+            max-width: 200px;
+            animation: shake .6s ease-in-out infinite;
+        }
+
+        @keyframes shake {
+            0% {
+                transform: rotate(0deg);
+            }
+
+            17% {
+                transform: rotate(10deg);
+            }
+
+            34% {
+                transform: rotate(-10deg);
+            }
+
+            51% {
+                transform: rotate(6deg);
+            }
+
+            68% {
+                transform: rotate(-6deg);
+            }
+
+            85% {
+                transform: rotate(3deg);
+            }
+
+            100% {
+                transform: rotate(0deg);
+            }
+        }
+
+        .christmas a {
+            position: absolute;
+            bottom: 5%;
+        }
+
+
+        .caymai {
+            width: 38%
+        }
+
+        .canhmaiphai,
+        .canhmaitrai {
+            width: 26%
+        }
+
+        .vang {
+            width: 5%;
+        }
+
+        .thantai {
+            width: 12%;
+        }
+
+        .denlongphai {
+            width: 6%;
+        }
+
+        .denlongtrai {
+            width: 8%;
+        }
+    </style>
+
+</head>
+
+
+<body>
+    <div id="mid" class="mid">
+
+        <audio id="play-mp3" src="/audio/We-Wish-You-A-Merry-Christmas-Crazy-Frog.mp3" autoplay hidden></audio>
+
+
+        <div class="christmas">
+
+            <div class="christmas__tree"></div>
+            <div class="christmars__reindeer">
+                <img src="img/santa.png" alt="#">
+            </div>
+            <div id="cm-gift" class="christmars__gift animate__animated animate__bounceInDown animate__delay-4s">
+                <img src="img/gift.png" alt="#">
+            </div>
+            <div class="christmars__title animate__animated animate__fadeInUp animate__delay-4s">
+                <h1>Merry Christmas</h1>
+            </div>
+
+            <a href="/home/index.html" style="text-decoration: underline; font-size: 16px; display: block;">Đến ngay Website</a>
+
+
+
+        </div>
+
+
+
+
+        <div hidden id="hinhanh">
+            <img class="caymai" src="img/caymai.png" alt="">
+            <img class="canhmaiphai" style="position: absolute; right: 0; z-index: -1;" src="img/canhmaiphai.png" alt="">
+            <img class="canhmaitrai" style="position: absolute; left: 0; z-index: -1;" src="img/canhmaitrai.png" alt="">
+            <img class="thantai" style="position: absolute; left: 0; top: 42%;" src="img/thantai.png" alt="">
+            <img class="vang" style="position: absolute; left: 25%; top: 67%;" src="img/vang.png" alt="">
+            <img class="vang" style="position: absolute; right: 25%; top: 67%;" src="img/vang.png" alt="">
+            <img class="vang" style="position: absolute; right: 0; top: 67%;" src="img/vang.png" alt="">
+            <img class="denlongphai" style="position: absolute; right: 28%;" src="img/denlongphai.png" alt="">
+            <img class="denlongtrai" style="position: absolute; left: 28%;" src="img/denlongtrai.png" alt="">
+            <div style="display: inline-block;">
+                <a href="/home/index.html">
+                    <img class="shake-image" src="img/tuitien.png" alt="">
+                </a>
+            </div>
+            <div class="feliz">
+                Happy new year!<br>2022
+                <a href="/home/index.html" style="text-decoration: underline; font-size: 16px; display: block;">Đến ngay Website</a>
+            </div>
+
+            <div class="fogos">
+                <div class="f1">
+                    <span><i></i></span>
+                    <span><i></i></span>
+                    <span><i></i></span>
+                </div>
+                <div class="f2">
+                    <span><i></i></span>
+                    <span><i></i></span>
+                    <span><i></i></span>
+                </div>
+                <div class="f3">
+                    <span><i></i></span>
+                    <span><i></i></span>
+                    <span><i></i></span>
+                </div>
+                <div class="f4">
+                    <span><i></i></span>
+                    <span><i></i></span>
+                    <span><i></i></span>
+                </div>
+            </div>
+
+        </div>
+
+
+    </div>
+
+    <script>
+        const audio = document.querySelector('#play-mp3')
+   
+    
+        document.querySelector('#cm-gift').onclick = () => {
+            
+            audio.src = "/audio/Chuc-Tet-Various-Artists.mp3"
+
+            document.querySelector('.christmas').style = "transform: translateX(-100%); display: none;"
+
+            document.body.style = "background : url('/img/vien.jpg') "
+            document.getElementById('hinhanh').hidden = false
+            document.querySelector('.christmas').hidden = true
+
+        }
+    </script>
+
+
+
+</body>
+
+</html>
